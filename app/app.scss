@@ -1,0 +1,67 @@
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+$blue: #0b2e69;
+$pink: #ac2166;
+body{
+  font-family: 'Century Gothic', sans-serif;
+}
+Label{
+  font-family: 'Century Gothic', sans-serif;
+}
+.fa {
+    font-family: FontAwesome, fontawesome-webfont;
+  }
+  .main-navigation-frame{
+    .navigation-list{
+      border-top-width: 0.5;
+      border-color: #999999;
+      // border-top: 1px solid #333333;
+      background: #f7f7f7;
+      .nav-link{
+        font-size: 17;
+        border-right-width: 0.5;
+        border-color: #999999;
+        &:last-child{
+          border-width: 0;
+        }
+        Label{
+          color: $blue;
+          margin-top: 5;
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+  .homepage{
+    background: url('~/assets/images/map-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    padding: 20 30 20 30;
+    .welcome-heading{
+      background: rgba(255,255,255,.8);
+      padding: 30 20 30 20;
+      border-radius: 10;
+      border-width: 0.5;
+      border-color: rgba(0,0,0,.1);
+    }
+  }
+  .btn{
+    padding: 10 16 10 16;
+    border-radius: 20;
+    border-width: 1;
+    border-color: $blue;
+    font-size: 16;
+    color: $blue;
+    &.btn-accent{
+      background: linear-gradient(90deg, $pink, $blue);
+      border-color: transparent;
+      color: #fff;
+    }
+  }
+  .link{
+    color: #ac2166;
+    font-weight: bold;
+    font-size: 15;
+    text-decoration: underline;
+  }
