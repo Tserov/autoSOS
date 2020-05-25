@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "956798391934",
+    "firebase_url": "https://autosos-4d0e5.firebaseio.com",
+    "project_id": "autosos-4d0e5",
+    "storage_bucket": "autosos-4d0e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956798391934:android:00d2395cc3c7d86f4e2a2f",
+        "android_client_info": {
+          "package_name": "org.nativescript.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956798391934-5s91bdcb1evod0vblsrdvkt5fo4a9vu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBwloHxSyDZNiJGMD12leduIYALuIJX90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956798391934-5s91bdcb1evod0vblsrdvkt5fo4a9vu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
