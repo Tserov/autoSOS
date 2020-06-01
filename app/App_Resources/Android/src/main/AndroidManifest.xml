@@ -13,7 +13,9 @@
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.INTERNET"/>
-
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	
 	<application
 		android:name="com.tns.NativeScriptApplication"
 		android:allowBackup="true"
@@ -36,6 +38,9 @@
 		</activity>
 		<activity android:name="com.tns.ErrorReportActivity"/>
 
-		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDP_dRi-6kYh4ttNsOwXUepjSxjenAnB5A" />
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDvtm7tbUWeYOKCJVH_-_abGwXib16brqg" />
+		<!-- <meta-data
+				android:name="com.google.android.geo.API_KEY"
+				android:value="@string/nativescript_google_maps_api_key" /> -->
 	</application>
 </manifest>

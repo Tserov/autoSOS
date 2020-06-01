@@ -8,7 +8,6 @@
       paddingBottom="120"
     >
       <StackLayout padding="0 30 0 30">
-        <!-- <Image class="logo" src="~/images/logo.png"></Image> -->
         <Label
           fontSize="40"
           textAlignment="center"
@@ -151,7 +150,7 @@ export default {
         if (this.loggedIn) {
         //   this.setUserToDb(this.user);
           this.processing = false;
-          this.alert("Успешно създаддохте своя акаунт");
+          this.alert("Успешно създадохте своя акаунт.");
           setTimeout(() => {
             this.$navigateTo(UserProfile, { frame: "mainContent" });
           },500);

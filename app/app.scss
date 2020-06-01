@@ -8,6 +8,9 @@ body{
 Label{
   font-family: 'Century Gothic', sans-serif;
 }
+.blue-color{
+  color: $blue;
+}
 .fa {
     font-family: FontAwesome, fontawesome-webfont;
   }
@@ -21,6 +24,12 @@ Label{
         font-size: 17;
         border-right-width: 0.5;
         border-color: #999999;
+        &.active{
+          background: #dcdcdc;
+          Label{
+            font-weight: bold;
+          }
+        }
         &:last-child{
           border-width: 0;
         }
@@ -53,6 +62,7 @@ Label{
     border-color: $blue;
     font-size: 16;
     color: $blue;
+    text-align: center;
     &.btn-accent{
       background: linear-gradient(90deg, $pink, $blue);
       border-color: transparent;
@@ -65,3 +75,87 @@ Label{
     font-size: 15;
     text-decoration: underline;
   }
+  .profile-card{
+    background: rgba(255,255,255,.8);
+    padding: 30 20 35 20;
+    border-width: 0.5;
+    border-color: rgba(0,0,0,.4);
+  }
+  .user-nav{
+    flex-direction: row;
+    align-items: center;
+    border-width: 0.5;
+    border-color: rgba(0,0,0,.4);
+    .link-tab{
+      padding: 15 10 15 10;
+      width: 50%;
+      color: $blue;
+      background: #fff;
+      text-align: center;
+      &.active{
+        background: $blue;
+        color: #fff;
+      }
+      & + .link-tab{
+        border-left-width: 0.5;
+        border-color: rgba(0,0,0,.4);
+      }
+    }
+  }
+#user-profile-info{
+  padding: 20 20 10 20;
+  .input-field{
+    margin-bottom: 10;
+  }
+}
+#user-services-list{
+  .servcie-container{
+    margin-bottom: 10;
+    .info{
+      padding: 10 10 10 10;
+      border-width: 0.5;
+      border-color: rgba(0,0,0,.4);
+      border-left-width: 0;
+    }
+  }
+}
+.service-data-info{
+  .section-title{
+    border-color: rgba(0,0,0,1);
+    border-bottom-width: 0.5;
+    margin-top: 10;
+    margin-bottom: 20;
+    font-weight: bold;
+    font-size: 17;
+    color: #222;
+  }
+  .input-field{
+    margin-bottom: 10;
+  }
+}
+.all-services{
+  .servcie-container{
+    padding: 5 0;
+    border-color: rgba(0,0,0,1);
+    border-bottom-width: 0.5;
+    margin-bottom: 10; 
+    .info{
+      padding: 10 10 10 10;
+    }
+  }
+}
+.gm-style-iw-d {
+  overflow: auto !important;
+  div{
+    background: transparent;
+  }
+  span{
+    background: transparent;
+  }
+}
+
+.gm-style .gm-style-iw-c {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
