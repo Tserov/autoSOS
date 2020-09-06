@@ -3,9 +3,9 @@
       <GridLayout columns="*" rows="*">
         <StackLayout row="0" col="0" height="100%" width="100%">
             <StackLayout width="100%" height="100%">
-              <StackLayout>
+              <StackLayout padding="0 20 0 20">
                 <Label fontSize="30" textAlignment="center" padding="30 0 0 0" class="heading" marginBottom="0" color="#232c69" fontWeight="bold" text="Всички сервизи"/>
-                <Label fontSize="16" textAlignment="center" padding="0 0 0 0" color="#555" fontWeight="bold" text="Открии своя сервиз"/>
+                <Label fontSize="16" textAlignment="center" padding="0 0 0 0" color="#555" textWrap="true" fontWeight="bold" text="Открии най-близкия сервиз и провери дали може да бъдеш приет за секунди."/>
                 <FlexboxLayout padding="20 10 20 10" alignItems="center" flexDirection="column" class="filters">
                   <StackLayout v-show="filter.isVisible">
                     <Label @tap="filter.isVisible = false" textAlignment="center" fontWeight="bold" marginBottom="10" fontSize="16" text="[X]"/>
@@ -18,7 +18,7 @@
 
               <StackLayout width="100%" height="100%" class="all-services">
                 <ScrollView orientation="vertical">
-                  <StackLayout width="100%" padding="10 20 90 20" >
+                  <StackLayout width="100%" padding="10 0 90 0" >
                     <StackLayout v-if="AllServicesCollection">
                       <StackLayout orientation="horizontal" class="servcie-container" v-for="(service, index) in AllServicesCollection" :key="index">
                         <StackLayout class="avatar">
@@ -32,7 +32,7 @@
                             <Label textWrap="true" fontSize="14" class="blue-color" :text="service.address ? service.address : 'няма въведен адрес'"/>
                           </FlexboxLayout>
                           <FlexboxLayout height="100%" flexGrow="1">
-                              <Image width="30" src="~/assets/images/info-icon.png" stretch="aspectFit" />
+                              <Image width="25" src="~/assets/images/info-icon.png" stretch="aspectFit" />
                           </FlexboxLayout>
                         </FlexboxLayout>
 

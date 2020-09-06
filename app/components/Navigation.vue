@@ -3,15 +3,15 @@
         <StackLayout class="main-navigation-frame" orientation="horizontal" verticalAlignment="top">
             <FlexboxLayout height="90" width="100%" class="navigation-list" justifyContent="center" alignItems="center">
                 <StackLayout verticalAlignment="center" height="100%" @tap="goToMapView()" flexGrow="1" class="nav-link" :class="{'active' : activeLink=='map'}">
-                    <Image width="35" src="~/assets/images/map-icon.png" stretch="aspectFit" />
+                    <Image width="30" src="~/assets/images/map-icon.png" stretch="aspectFit" />
                     <Label textAlignment="center" text="Карта"/>
                 </StackLayout>
                 <StackLayout verticalAlignment="center" height="100%" @tap="goToServicePlaces()" flexGrow="1" class="nav-link" :class="{'active' : activeLink=='services'}">
-                    <Image width="35" src="~/assets/images/services-icon.png" stretch="aspectFit" />
+                    <Image width="30" src="~/assets/images/services-icon.png" stretch="aspectFit" />
                     <Label textAlignment="center" text="Сервизи"/>
                 </StackLayout>
                 <StackLayout verticalAlignment="center" height="100%" @tap="goToProfile()" flexGrow="1" class="nav-link" :class="{'active' : activeLink=='profil'}">
-                    <Image width="35" src="~/assets/images/profile-icon.png" stretch="aspectFit" />
+                    <Image width="30" src="~/assets/images/profile-icon.png" stretch="aspectFit" />
                     <Label textAlignment="center" text="Профил"/>
                 </StackLayout>
             </FlexboxLayout>

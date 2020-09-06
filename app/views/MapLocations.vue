@@ -37,7 +37,7 @@ export default {
     return {
       latitude: 42.500910,
       longitude: 25.170486,
-      zoom: 7,
+      zoom: 8,
       bearing: "0",
       tilt: "",
       mapView: null,
@@ -79,7 +79,7 @@ export default {
                       this.currentUserLocation = location;
                       that.latitude = location.latitude;
                       that.longitude = location.longitude;
-                      that.zoom = 4;
+                      that.zoom = 7;
                       that.bearing = 0;
                       that.altitude = 0;
                     }
@@ -109,7 +109,7 @@ export default {
               } else {
                 that.latitude = location.latitude;
                 that.longitude = location.longitude;
-                that.zoom = 4;
+                that.zoom = 7;
                 that.bearing = 0;
                 that.altitude = 0;
               }
@@ -161,10 +161,10 @@ export default {
     },
     createMarkers() {
       this.mapView.infoWindowTemplate = `
-            <StackLayout padding="10 12 10 12" orientation="vertical" width="250" height="190">
+            <StackLayout padding="10 12 10 12" orientation="vertical" width="200" height="190">
                 <StackLayout verticalAlignment="center" width="100%" height="100%">
-                    <Label text="{{title}}" marginBottom="10" textAlignment="center" textWrap="true" color="black" fontWeight="bold" fontSize="19"/>
-                    <Label horizontalAlignment="center">
+                    <Label text="{{title}}" marginBottom="0" textAlignment="center" textWrap="true" color="black" fontWeight="bold" fontSize="19"/>
+                    <Label horizontalAlignment="center" textWrap="true" textAlignment="center">
                         <FormattedString>
                             <Span text="{{service.city}}" textWrap="true" color="#333333"  fontSize="13" ></Span>
                             <Span text=", " textWrap="true" color="#333333"  fontSize="13" ></Span>

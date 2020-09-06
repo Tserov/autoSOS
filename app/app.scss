@@ -17,15 +17,15 @@ Label{
   .main-navigation-frame{
     .navigation-list{
       border-top-width: 0.5;
-      border-color: #999999;
+      border-color: #d3d3d3;
       // border-top: 1px solid #333333;
       background: #f7f7f7;
       .nav-link{
         font-size: 17;
         border-right-width: 0.5;
-        border-color: #999999;
+        border-color: #d3d3d3;
         &.active{
-          background: #dcdcdc;
+          background: #e6e6e6;
           Label{
             font-weight: bold;
           }
@@ -112,10 +112,7 @@ Label{
   .servcie-container{
     margin-bottom: 10;
     .info{
-      padding: 10 10 10 10;
-      border-width: 0.5;
-      border-color: rgba(0,0,0,.4);
-      border-left-width: 0;
+      padding: 10 10 10 20;
     }
   }
 }

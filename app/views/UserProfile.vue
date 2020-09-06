@@ -49,7 +49,7 @@
 
               <StackLayout v-show="activeTab=='services'" id="user-services-list" paddingBottom="120">
                 <ScrollView orientation="vertical">
-                  <StackLayout padding="20 20 10 20">
+                  <StackLayout padding="20 0 10 0" horizontalAlignment="center">
                     <StackLayout v-if="userServices.length">
 
                       <StackLayout orientation="horizontal" class="servcie-container" v-for="(service, index) in userServices" :key="index">
@@ -57,13 +57,13 @@
                           <Image horizontalAlignment="left" verticalAlignment="center" width="100" src="~/assets/images/service-avatar.png" stretch="aspectFit" />
                         </StackLayout>
 
-                        <FlexboxLayout verticalAlignment="center" хеигхт="" @tap="goToSingleServiceView(service)" class="info" alignItems="center" justifyContent="space-between" flexDirection="row" flexWrap="wrap">
+                        <FlexboxLayout verticalAlignment="center" @tap="goToSingleServiceView(service)" class="info" alignItems="center" justifyContent="space-between" flexDirection="row" flexWrap="wrap">
                           <StackLayout width="80%">
                             <Label fontSize="16" class="blue-color" fontWeight="bold" :text="service.name ? service.name : 'Име на сервиз'"/>
                             <Label textWrap="true" fontSize="14" class="blue-color" :text="service.address ? service.address : 'няма въведен адрес'"/>
                           </StackLayout>
                           <StackLayout flexGrow="1">
-                              <Image width="25" src="~/assets/images/edit-icon.png" stretch="aspectFit" />
+                              <Image width="20" src="~/assets/images/edit-icon.png" stretch="aspectFit" />
                           </StackLayout>
                         </FlexboxLayout>
 
@@ -73,7 +73,7 @@
                     <StackLayout v-else>
                       <Label textAlignment="center" text="Нямате добавени сервизи."/>
                     </StackLayout>
-                    <Label @tap="goToSingleServiceView(null)" marginTop="20" class="btn btn-accent" text="Добави нов сервиз"/>
+                    <Label width="220" @tap="goToSingleServiceView(null)" marginTop="20" class="btn btn-accent" text="Добави нов сервиз"/>
                   </StackLayout>
                 </ScrollView>
               </StackLayout>
@@ -128,6 +128,9 @@ export default {
       this.$store.dispatch('getAllUserServricesFromDb');
     // }
     this.currentUser = this.user;
+    setTimeout(() => {
+      this.currentUser = this.user;
+    }, 500);
   },
 }
 </script>
